@@ -1,9 +1,9 @@
 
 import './App.scss';
-import Routes from "./routes";
+import { RoutesDOM } from './routes';
 
 export default function App (){
   return (
-      <Routes/>
+      <RoutesDOM/>
   );
 }

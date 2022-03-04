@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export const Home = () => (
   <Fragment>
-    <Header>
+    <Header />
     <Section size="medium" className="home">
       <Container>
         <Column.Group>
@@ -24,9 +24,9 @@ export const Home = () => (
               Lorem ipsum, or lipsum as it is sometimes known, is dummy text
               used in laying out print.
             </Title>
-            <a className="button is-outlined is-white is-large">
+            <Link to='/register' className="button is-outlined is-white is-large">
               <strong>Register for free Nowstrong</strong>
-            </a>
+            </Link>
           </Column>
           <Column size={6} offset={1}>
             <img src={presentationImage} />
@@ -34,7 +34,6 @@ export const Home = () => (
         </Column.Group>
       </Container>
     </Section>
-    </Header>
   </Fragment>
 );
 
